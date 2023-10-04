@@ -1,4 +1,4 @@
-/* styles/Navigation.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,13 +8,33 @@
 }
 
 .menu-toggle {
-  display: none; /* Initially hide the hamburger button on larger screens */
+  display: none;
 }
 
-/* Show the nav-links when menu is toggled */
+.cancel-toggle {
+  display: none;
+}
+
 .nav-links.show {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 11%;
+  right: 0;
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .nav-links {
@@ -72,6 +92,13 @@
 
 @media (max-width: 768px) {
   .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+
+  .cancel-toggle {
     display: block;
     cursor: pointer;
     font-size: 20px;
