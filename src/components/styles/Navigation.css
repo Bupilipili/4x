@@ -1,0 +1,84 @@
+/* styles/Navigation.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none; /* Initially hide the hamburger button on larger screens */
+}
+
+/* Show the nav-links when menu is toggled */
+.nav-links.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.nav-links li a:hover {
+  color: #fc0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
