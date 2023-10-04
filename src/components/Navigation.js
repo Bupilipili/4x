@@ -1,13 +1,25 @@
-// components/Navigation.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Hamburger icon from react-icons
 import './styles/Navigation.css';
 
 function Navigation() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleToggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <nav className="navbar">
-      <h3>4le Studios</h3>
-      <ul className="nav-links">
+    <h3>4le Studios</h3>
+    <div className="menu-toggle" onClick={handleToggleMenu}>
+      <FaBars />
+    </div>
+    <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
+     <div className="cancel-toggle" onClick={handleToggleMenu}>
+     <FaTimes />
+       </div> 
         <li>
           <Link to="/">Home</Link>
         </li>
