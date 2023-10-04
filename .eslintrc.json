@@ -30,9 +30,6 @@
   ],
   "ignorePatterns": [
     "dist/",
-    "build/",
-    "Navigation.js",
-    "Home.js",
-    "Details.js"
+    "build/"
   ]
 }
