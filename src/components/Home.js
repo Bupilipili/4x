@@ -6,6 +6,9 @@ function Home() {
     <div className="section">
       <h1>Welcome to 4le Studios</h1>
       <p>Your hub for awesome games and services.</p>
+    <div>
+      We build mobile gaming worlds
+    </div>
     </div>
   );
 }
