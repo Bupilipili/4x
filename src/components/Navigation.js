@@ -11,7 +11,7 @@ function Navigation() {
   };
 
   const handleLinkClick = () => {
-    setShowMenu(false); // Hide the navbar when a link is clicked
+    setShowMenu(false);
   };
 
   return (
