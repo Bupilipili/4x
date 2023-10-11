@@ -4,7 +4,7 @@ import './styles/About.css';
 
 function About() {
   return (
-    <div className="section">
+    <div>
       <h1>About Us</h1>
       {/* Add content related to about us */}
     </div>
