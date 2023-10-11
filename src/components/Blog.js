@@ -4,7 +4,7 @@ import './styles/Blog.css';
 
 function Blog() {
   return (
-    <div className="section">
+    <div>
       <h1>Our Blog</h1>
       {/* Add content related to blog */}
     </div>
