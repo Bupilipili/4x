@@ -3,7 +3,7 @@ import React from 'react';
 
 function Privacy() {
   return (
-    <div className="section">
+    <div>
       <h1>Privacy Page</h1>
       {/* Add content related to the store */}
     </div>
