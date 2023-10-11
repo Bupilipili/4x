@@ -4,7 +4,7 @@ import './styles/Games.css';
 
 function Games() {
   return (
-    <div className="section">
+    <div>
       <h1>Our Exciting Games</h1>
       {/* Add content related to games */}
     </div>
