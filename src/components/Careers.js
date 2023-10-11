@@ -3,7 +3,7 @@ import React from 'react';
 
 function Careers() {
   return (
-    <div className="section">
+    <div>
       <h1>Careers Page</h1>
       {/* Add content related to the store */}
     </div>
