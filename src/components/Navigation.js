@@ -27,7 +27,7 @@ function Navigation() {
         <li onClick={handleLinkClick}>
           <Link to="/">Home</Link>
         </li>
-        <li onClick={handleLinkClick}>
+        <li onClick={handleLinkClick}> 
           <Link to="/games">Games</Link>
         </li>
         <li onClick={handleLinkClick}>
