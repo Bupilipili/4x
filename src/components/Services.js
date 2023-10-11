@@ -4,7 +4,7 @@ import './styles/Services.css';
 
 function Services() {
   return (
-    <div className="section">
+    <div>
       <h1>Our Services</h1>
       {/* Add content related to services */}
     </div>
