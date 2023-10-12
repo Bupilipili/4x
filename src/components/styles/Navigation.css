@@ -5,14 +5,25 @@
   align-items: center;
   padding: 0 10px;
   backdrop-filter: blur(20rem);
+  background-color: #262b2a;
+  gap: 0;
 }
 
 .menu-toggle {
-  display: none;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
 }
 
 .cancel-toggle {
-  display: none;
+  display: block;
+  cursor: pointer;
+  font-size: 30px;
+  color: #262b2a;
+  padding-left: 36vw;
+  position: relative;
+  top: -8px;
 }
 
 .nav-links.show {
@@ -23,11 +34,12 @@
   height: 100vh;
   width: 40%;
   right: 0;
-  background-color: #333;
+  background-color: rgba(178, 157, 13, 0.9);
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
   animation: slideInRight 0.5s ease forwards;
+  margin: 0;
 }
 
 @keyframes slideInRight {
@@ -41,15 +53,13 @@
 }
 
 .nav-links {
-  display: flex;
+  display: none;
+  gap: 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-links li {
-  margin-right: 10px;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
 }
 
 .nav-links li a {
@@ -59,27 +69,27 @@
 
 .dropdown-menu li a {
   color: white;
-  padding: 2px;
   display: block;
 }
 
 .nav-links li a:hover {
-  color: #fc0;
+  color: #000;
 }
 
 .dropdown {
   position: relative;
 }
 
+.Page {
+  color: #fff;
+}
+
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
+  position: relative;
+  padding-left: 14px;
+  padding-top: 0;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: none;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -87,30 +97,48 @@
 }
 
 .dropdown-menu li {
-  margin: 0;
+  margin: 1px;
 }
 
 .dropdown-menu li a:hover {
-  background-color: #444;
+  color: rgba(178, 157, 13, 1);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40vw;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgba(178, 157, 13, 0.9);
+  }
+
   .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
+    display: none;
   }
 
   .cancel-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 26px;
-    color: white;
-    padding-left: 36vw;
+    display: none;
   }
 
   .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .nav-links li {
+    margin-right: 10px;
+  }
+
+  .dropdown-menu {
     display: none;
+    position: absolute;
+    list-style: none;
+    padding-top: 22px;
+    padding-left: 12px;
   }
 }
