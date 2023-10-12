@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles/Home.css';
 
 const words = ['Entertainment', 'Pleasure', 'Enjoyment'];
@@ -23,6 +24,8 @@ function Home() {
       <h1 className='head1'>We craft games <br/> 
         <span className='fade'>{currentWord}</span>
       </h1>
+      <p className='intro'> Developing games that are imaginative, fun and bringing colors to the gaming world </p>
+      <Link to="/games" className='Glink'>Explore our Games</Link>
     </div>
   );
 }
