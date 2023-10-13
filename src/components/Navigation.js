@@ -27,7 +27,7 @@ function Navigation() {
         <li onClick={handleLinkClick}>
           <Link to="/">Home</Link>
         </li>
-        <li onClick={handleLinkClick}> 
+        <li onClick={handleLinkClick}>
           <Link to="/games">Games</Link>
         </li>
         <li onClick={handleLinkClick}>
@@ -37,7 +37,7 @@ function Navigation() {
           <Link to="/about">About</Link>
         </li>
         <li className="dropdown">
-          <span className='Page'>Pages</span>
+          <span className="Page">Pages</span>
           <ul className="dropdown-menu">
             <li onClick={handleLinkClick}><Link to="/pages/store">Store</Link></li>
             <li onClick={handleLinkClick}><Link to="/pages/cart">Cart</Link></li>
