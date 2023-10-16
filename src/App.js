@@ -2,18 +2,18 @@ import React from 'react';
 import {
   BrowserRouter as Router, Route, Routes,
 } from 'react-router-dom';
-import Home from './components/Home';
-import Games from './components/Games';
-import Services from './components/Services';
-import About from './components/About';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Navigation from './components/Navigation';
-import Store from './components/Store';
-import Cart from './components/Cart';
-import Careers from './components/Careers';
-import Privacy from './components/Privacy';
-import Terms from './components/Terms';
+import Home from './components/js/Home';
+import Games from './components/js/Games';
+import Services from './components/js/Services';
+import About from './components/js/About';
+import Blog from './components/js/Blog';
+import Contact from './components/js/Contact';
+import Navigation from './components/js/Navigation';
+import Store from './components/js/Store';
+import Cart from './components/js/Cart';
+import Careers from './components/js/Careers';
+import Privacy from './components/js/Privacy';
+import Terms from './components/js/Terms';
 
 function App() {
   return (
