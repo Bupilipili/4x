@@ -11,7 +11,7 @@ body {
   line-height: normal;
   color: yellow;
   padding-left: 8px;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .head1 {
@@ -50,8 +50,54 @@ body {
   font-weight: 300;
 }
 
-.slick-slide .image1 {
-  padding: 20px;
+.feature {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image1 {
+  padding: 0;
+  margin: 0;
+}
+
+.image2 {
+  width: 40%;
+}
+
+.image3 {
+  position: relative;
+  top: 18px;
+  right: 9px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.intro2 {
+  font-family: 'Akaya Kanadaka', sans-serif;
+  padding-right: 8px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+/* .slick-slide .image1 {
+  padding: 0.4rem 0.3rem;
   height: 14rem;
   width: 24rem;
+  border-radius: 1.4rem;
+} */
+
+.slick-slider {
+  margin: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.getit {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  top: -60px;
 }
