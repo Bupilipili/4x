@@ -7,6 +7,9 @@ import '../styles/Home.css';
 import image1 from '../images/blogs-img-4.jpg';
 import image2 from '../images/blogs-img-4.jpg';
 import image3 from '../images/blogs-img-4.jpg';
+import image4 from '../images/appstore.png';
+import image5 from '../images/googleplay.png';
+import image6 from '../images/top-bottom.png';
 
 const words = ['Entertainment', 'Pleasure', 'Enjoyment'];
 function Home() {
@@ -29,7 +32,7 @@ function Home() {
     speed: 300,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     adaptiveHeight: true,
     responsive: [
@@ -45,11 +48,11 @@ function Home() {
       {
         breakpoint: 480,
         settings: {
-          dots: true,
+          dots: false,
           arrows: false,
           infinite: true,
           slidesToScroll: 1,
-          autoplaySpeed: 3000,
+          autoplaySpeed: 5000,
           speed: 300,
           slidesToShow: 1,
           adaptiveHeight: true,
@@ -67,20 +70,35 @@ function Home() {
       </h1>
       <p className='intro'> Developing games that are imaginative, fun and bringing colors to the gaming world </p>
       <Link to="/games" className='Glink'>Explore our Games</Link>
+      <div className='feature'>
+      <img className='image3' src={image6}/>
+        <p className='intro2'>Featured Games</p>
+        </div>
       <Slider {...settings}>
         <div>
           <img className='image1' src={image1} alt="description_1" />
-          <p className="legend">Legend 1</p>
+          <div className='getit'>
+          <img className='image2' src={image4}/>
+          <img className='image2' src={image5}/>
+          </div>
         </div>
         <div>
           <img className='image1' src={image2} alt="description_2" />
-          <p className="legend">Legend 2</p>
+          <div className='getit'>
+          <img className='image2' src={image4}/>
+          <img className='image2' src={image5}/>
+          </div>
         </div>
         <div>
           <img className='image1' src={image3} alt="description_3" />
-          <p className="legend">Legend 3</p>
+          <div className='getit'>
+          <img className='image2' src={image4}/>
+          <img className='image2' src={image5}/>
+          </div>
         </div>
-      </Slider> 
+      </Slider>
+    <h3>Welcome to 4le Studios</h3>
+    <h4>Bringing people together through the power of play</h4>
     </div>
   );
 }
