@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaPlus } from 'react-icons/fa';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +15,7 @@ import image6 from '../images/top-bottom.png';
 const words = ['Entertainment', 'Pleasure', 'Enjoyment'];
 function Home() {
   const [currentWord, setCurrentWord] = useState('Entertainment');
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +25,21 @@ function Home() {
       });
     }, 3000); // Change word every 3 seconds
 
-    return () => clearInterval(interval); // Clean up on component unmount
+    const animationInterval = setInterval(() => {
+      setCount(oldCount => {
+        if (oldCount < 500) {
+          return oldCount + 10;
+        } else {
+          clearInterval(animationInterval);
+          return oldCount;
+        }
+      });
+    }, 2); // Increment count every 2 milliseconds
+
+    return () => {
+      clearInterval(interval);
+      clearInterval(animationInterval);
+    }; // Clean up on component unmount
   }, []);
 
   const settings = {
@@ -48,7 +64,7 @@ function Home() {
       {
         breakpoint: 480,
         settings: {
-          dots: false,
+          dots: true,
           arrows: false,
           infinite: true,
           slidesToScroll: 1,
@@ -63,7 +79,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className='Home'>
       <h2 className='head2'>Building Mobile Gaming Worlds</h2>
       <h1 className='head1'>We craft games <br />
         <span className='fade'>{currentWord}</span>
@@ -97,8 +113,24 @@ function Home() {
           </div>
         </div>
       </Slider>
-    <h3>Welcome to 4le Studios</h3>
-    <h4>Bringing people together through the power of play</h4>
+    <h3 className='head3'>Welcome to <span className='sub3'>4le Studios</span></h3>
+    <h4 className='head4'>Bringing people together through <span className='sub3'>the power of play</span></h4>
+    <p className='intro3'> As 4le Studios, we continue to open doors to new worlds every day and we are working excitedly for creating new games and unique ideas! </p>
+    <p className='number'>{count}<span className='plus'><FaPlus /></span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
