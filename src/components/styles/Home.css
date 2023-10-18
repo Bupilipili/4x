@@ -1,6 +1,10 @@
 body {
-  /* background: linear-gradient(to right, #262949, #044); */
-  background: #262b2a;
+  background: linear-gradient(to right, #262949, #044); /* background: #262b2a; */
+}
+
+.Home {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .head2 {
@@ -10,7 +14,6 @@ body {
   font-weight: 500;
   line-height: normal;
   color: yellow;
-  padding-left: 8px;
   margin-top: 6rem;
 }
 
@@ -22,7 +25,6 @@ body {
   line-height: normal;
   color: #fff;
   margin: 0;
-  padding-left: 8px;
 }
 
 .head1 .fade {
@@ -32,9 +34,8 @@ body {
 
 .intro {
   font-family: 'Akaya Kanadaka', sans-serif;
-  padding-left: 8px;
   font-size: 20px;
-  color: #fff;
+  color: #e1e1e3;
   padding-bottom: 26px;
 }
 
@@ -45,7 +46,6 @@ body {
   border-radius: 8px;
   text-decoration: none;
   border: 0;
-  margin-left: 8px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 300;
 }
@@ -58,6 +58,7 @@ body {
 .image1 {
   padding: 0;
   margin: 0;
+  height: 16rem;
 }
 
 .image2 {
@@ -77,17 +78,10 @@ body {
   padding-right: 8px;
   font-size: 23px;
   font-weight: bold;
-  color: #fff;
+  color: #e1e1e3;
   margin: 0;
   padding-top: 1rem;
 }
-
-/* .slick-slide .image1 {
-  padding: 0.4rem 0.3rem;
-  height: 14rem;
-  width: 24rem;
-  border-radius: 1.4rem;
-} */
 
 .slick-slider {
   margin: 1rem 1rem;
@@ -100,4 +94,52 @@ body {
   gap: 4px;
   position: relative;
   top: -60px;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.head3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+}
+
+.sub3 {
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: yellow;
+}
+
+.head4 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin: 0;
+}
+
+.intro3 {
+  font-family: 'Akaya Kanadaka', sans-serif;
+  font-size: 20px;
+  color: #e1e1e3;
+}
+
+.number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  color: #e1e1e3;
+}
+
+.plus {
+  color: yellow;
+  font-size: 16px;
 }
