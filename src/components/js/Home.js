@@ -152,6 +152,7 @@ function Home() {
           </div>
         </div>
       </Slider>
+      <div className='part2'>
       <h3 className='head3'>Welcome to <span className='sub3'>4le Studios</span></h3>
       <h4 className='head4'>Bringing people together through <span className='sub3'>the power of play</span></h4>
       <p className='intro3'> As 4le Studios, we continue to open doors to new worlds every day and we are working excitedly for creating new games and unique ideas! </p>
@@ -168,6 +169,12 @@ function Home() {
       <p className='intro4'>The 4le Studios is launching with 4K+ Games.</p>
       <div className='bar'></div>
       <Link to="/games" className='Glink2'>Explore our Games</Link>
+      </div>
+      <h4 className='head5'>Crafting Unforgettable<span className='sub4'>Gaming Experiences</span></h4>
+      <h4 className='head6'>Our Games are<span className='sub4'>Vibrant</span>Worlds With <span className='sub3'>Charming</span>Characters</h4>
+
+
+
 
 
 
