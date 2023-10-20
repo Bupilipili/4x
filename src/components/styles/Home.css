@@ -1,9 +1,8 @@
 body {
-  background: linear-gradient(to right, #262949, #044); /* background: #262b2a; */
+  background: linear-gradient(to right, #222429, #044); /* background: #262b2a; */
 }
 
 .Home {
-  padding-left: 8px;
   padding-right: 8px;
 }
 
@@ -15,6 +14,7 @@ body {
   line-height: normal;
   color: yellow;
   margin-top: 6rem;
+  padding-left: 8px;
 }
 
 .head1 {
@@ -25,6 +25,7 @@ body {
   line-height: normal;
   color: #fff;
   margin: 0;
+  padding-left: 8px;
 }
 
 .head1 .fade {
@@ -37,6 +38,7 @@ body {
   font-size: 20px;
   color: #e1e1e3;
   padding-bottom: 26px;
+  padding-left: 8px;
 }
 
 .Glink {
@@ -48,6 +50,7 @@ body {
   border: 0;
   font-family: 'Orbitron', sans-serif;
   font-weight: 300;
+  margin-left: 8px;
 }
 
 .feature {
@@ -100,6 +103,13 @@ body {
   bottom: 10px;
 }
 
+.part2 {
+  background: linear-gradient(to right, #262028, #044);
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+  padding-left: 8px;
+}
+
 .head3 {
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
@@ -135,7 +145,7 @@ body {
 
 .number {
   font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   color: #e1e1e3;
   margin-bottom: 0;
   margin-top: 32px;
@@ -171,4 +181,33 @@ body {
   font-weight: 300;
   position: relative;
   top: 3rem;
+}
+
+.head5 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.sub4 {
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: yellow;
+  padding-left: 5px;
+}
+
+.head6 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
 }
