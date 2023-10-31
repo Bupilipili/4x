@@ -5,12 +5,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/Home.css';
-import image1 from '../images/blogs-img-4.jpg';
-import image2 from '../images/blogs-img-4.jpg';
-import image3 from '../images/blogs-img-4.jpg';
 import image4 from '../images/appstore.png';
 import image5 from '../images/googleplay.png';
 import image6 from '../images/top-bottom.png';
+import image7 from '../images/character.jpeg';
+import image8 from '../images/anime.jpg';
 
 const words = ['Entertainment', 'Pleasure', 'Enjoyment'];
 function Home() {
@@ -53,13 +52,13 @@ function Home() {
     const animationInterval3 = setInterval(() => {
       setCount3(oldCount => {
         if (oldCount < 50) {
-          return oldCount + 1;
+          return oldCount + 5;
         } else {
           clearInterval(animationInterval3);
           return oldCount;
         }
       });
-    }, 7); // Increment count3 every 7 millisecond
+    }, 2); // Increment count3 every 7 millisecond
 
     const animationInterval4 = setInterval(() => {
       setCount4(oldCount => {
@@ -131,21 +130,21 @@ function Home() {
       </div>
       <Slider {...settings}>
         <div>
-          <img className='image1' src={image1} alt="description_1" />
+          <img className='image1' src={image7} alt="description_1" />
           <div className='getit'>
             <img className='image2' src={image4} />
             <img className='image2' src={image5} />
           </div>
         </div>
         <div>
-          <img className='image1' src={image2} alt="description_2" />
+          <img className='image1' src={image7} alt="description_2" />
           <div className='getit'>
             <img className='image2' src={image4} />
             <img className='image2' src={image5} />
           </div>
         </div>
         <div>
-          <img className='image1' src={image3} alt="description_3" />
+          <img className='image1' src={image7} alt="description_3" />
           <div className='getit'>
             <img className='image2' src={image4} />
             <img className='image2' src={image5} />
@@ -171,8 +170,39 @@ function Home() {
       <Link to="/games" className='Glink2'>Explore our Games</Link>
       </div>
       <h4 className='head5'>Crafting Unforgettable<span className='sub4'>Gaming Experiences</span></h4>
-      <h4 className='head6'>Our Games are<span className='sub4'>Vibrant</span>Worlds With <span className='sub3'>Charming</span>Characters</h4>
+      <h4 className='head6'>Our Games are<span className='sub4'>Vibrant</span> Worlds With <span className='sub3'>Charming</span> Characters</h4>
+      <div>
+      <div className="main-grid">
+       <div className="flex1">
+          <img className='icon' src={image8}/>
+          <div className='exp'>
+          <p className='head7'>Cyber Sword</p>
+          <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
+          <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
+          </div>
+       </div>
+       <div className="flex1">
+         <img className="icon" src={image8}/>
+         <div className='exp'>
+          <p className='head7'>Cyber Sword</p>
+          <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
+          <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
+          </div>
+        </div>
+        <div className="flex1">
+         <img className="icon" src={image8}/>
+         <div className='exp'>
+          <p className='head7'>Cyber Sword</p>
+          <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
+          <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
+          </div>
+        </div>
+        </div>
+        
+    
 
+
+      </div>
 
 
 
