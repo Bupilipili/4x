@@ -7,7 +7,7 @@ body {
 }
 
 .head2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -18,7 +18,7 @@ body {
 }
 
 .head1 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -61,7 +61,9 @@ body {
 .image1 {
   padding: 0;
   margin: 0;
-  height: 16rem;
+  width: 100%;
+  height: 43rem;
+  border-radius: 2rem;
 }
 
 .image2 {
@@ -88,7 +90,6 @@ body {
 
 .slick-slider {
   margin: 1rem 1rem;
-  border-radius: 0.5rem;
 }
 
 .getit {
@@ -111,7 +112,7 @@ body {
 }
 
 .head3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -120,7 +121,7 @@ body {
 }
 
 .sub3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -128,8 +129,8 @@ body {
 }
 
 .head4 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 26px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -184,8 +185,8 @@ body {
 }
 
 .head5 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 26px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -194,7 +195,7 @@ body {
 }
 
 .sub4 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -203,11 +204,62 @@ body {
 }
 
 .head6 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 26px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   color: #fff;
   text-align: center;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  gap: 24px;
+  margin-left: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background: linear-gradient(to right, #222122, #033);
+  border-radius: 8px;
+}
+
+.icon {
+  height: 26rem;
+  padding: 1rem;
+  width: 90%;
+  border-radius: 2rem;
+}
+
+.exp {
+  padding-left: 1rem;
+}
+
+.head7 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.genre {
+  font-family: 'Akaya Kanadaka', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: darkgrey;
+}
+
+.words {
+  color: yellow;
 }
