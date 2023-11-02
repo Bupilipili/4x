@@ -1,10 +1,9 @@
 body {
-  background: linear-gradient(to right, #222429, #044); /* background: #262b2a; */
+  background: linear-gradient(to right, #011, #044); /* background: #262b2a; */
 }
 
-.Home {
-  padding-right: 8px;
-}
+/* .Home {
+} */
 
 .head2 {
   font-family: 'Chakra Petch', sans-serif;
@@ -105,7 +104,7 @@ body {
 }
 
 .part2 {
-  background: linear-gradient(to right, #262028, #044);
+  background: linear-gradient(to right, #000, #033);
   padding-bottom: 8rem;
   padding-top: 2rem;
   padding-left: 8px;
@@ -186,7 +185,7 @@ body {
 
 .head5 {
   font-family: 'Chakra Petch', sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -200,7 +199,6 @@ body {
   font-weight: 500;
   line-height: normal;
   color: yellow;
-  padding-left: 5px;
 }
 
 .head6 {
@@ -211,6 +209,8 @@ body {
   line-height: normal;
   color: #fff;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .main-grid {
@@ -220,6 +220,7 @@ body {
   gap: 24px;
   margin-left: 0.75rem;
   margin-right: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .flex1 {
@@ -227,14 +228,13 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  background: linear-gradient(to right, #222122, #033);
+  background: linear-gradient(to right, #000, #033);
   border-radius: 8px;
 }
 
 .icon {
   height: 26rem;
   padding: 1rem;
-  width: 90%;
   border-radius: 2rem;
 }
 
@@ -262,4 +262,29 @@ body {
 
 .words {
   color: yellow;
+}
+
+.part3 {
+  padding-top: 1rem;
+  background: linear-gradient(to right, #000, #033);
+}
+
+.intro5 {
+  font-family: 'Akaya Kanadaka', sans-serif;
+  font-size: 20px;
+  color: #e1e1e3;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.intro6 {
+  font-family: 'Akaya Kanadaka', sans-serif;
+  font-size: 20px;
+  color: #e1e1e3;
+  margin: 0;
+}
+
+.image9 {
+  width: 95%;
 }
