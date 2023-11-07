@@ -71,7 +71,7 @@ function Home() {
           return oldCount;
         }
       });
-    }, 1000); // Increment count3 every 4 seconds
+    }, 1000); // Increment count3 every 1 seconds
 
     return () => {
       clearInterval(interval);
@@ -250,7 +250,7 @@ function Home() {
           <p className='head7'>Peter Parker<br/><span className='intro6'>Artist</span></p>
         </div>
       </Slider>
-
+      <p className='head8'>Our Team<span className='sub4'> Provide</span></p>
 
 
 
