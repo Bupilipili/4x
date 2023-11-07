@@ -288,3 +288,14 @@ body {
 .image9 {
   width: 95%;
 }
+
+.head8 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin: 0;
+  padding-left: 1rem;
+}
