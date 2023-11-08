@@ -16,7 +16,7 @@ function Navigation() {
 
   return (
     <nav className="navbar">
-      <h3>4le Studios</h3>
+      <h3 className='logo'>4le Studios</h3>
       <div className="menu-toggle" onClick={handleToggleMenu}>
         <FaBars />
       </div>
