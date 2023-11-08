@@ -60,7 +60,7 @@ function Home() {
           return oldCount;
         }
       });
-    }, 2); // Increment count3 every 7 millisecond
+    }, 2); // Increment count3 every 2 millisecond
 
     const animationInterval4 = setInterval(() => {
       setCount4(oldCount => {
@@ -120,30 +120,30 @@ function Home() {
 
   const settings2 = {
     centerMode: true,
-  centerPadding: '40px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+    centerPadding: '40px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 5000
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '10px',
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 5000
-      }
-    }
-  ]
+    ]
 
   };
 
@@ -202,80 +202,82 @@ function Home() {
       </div>
       <h4 className='head5'>Crafting Unforgettable<span className='sub4'> Gaming Experiences</span></h4>
       <h4 className='head6'>Our Games are<span className='sub4'> Vibrant</span> Worlds With <span className='sub3'>Charming</span> Characters</h4>
-        <div className="main-grid">
-          <div className="flex1">
-            <img className='icon' src={image8} />
-            <div className='exp'>
-              <p className='head7'>Lorem Ipsum</p>
-              <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
-              <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
-            </div>
-          </div>
-          <div className="flex1">
-            <img className="icon" src={image8} />
-            <div className='exp'>
-              <p className='head7'>Lorem Ipsum</p>
-              <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
-              <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
-            </div>
-          </div>
-          <div className="flex1">
-            <img className="icon" src={image8} />
-            <div className='exp'>
-              <p className='head7'>Lorem Ipsum</p>
-              <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
-              <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
-            </div>
+      <div className="main-grid">
+        <div className="flex1">
+          <img className='icon' src={image8} />
+          <div className='exp'>
+            <p className='head7'>Lorem Ipsum</p>
+            <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
+            <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
           </div>
         </div>
-        <div className='part3'>
+        <div className="flex1">
+          <img className="icon" src={image8} />
+          <div className='exp'>
+            <p className='head7'>Lorem Ipsum</p>
+            <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
+            <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
+          </div>
+        </div>
+        <div className="flex1">
+          <img className="icon" src={image8} />
+          <div className='exp'>
+            <p className='head7'>Lorem Ipsum</p>
+            <p className='genre'>Action <span>|</span> Horror <span>|</span> Mobile <span>|</span> Adventure</p>
+            <p className='words'> Mauris euismod nibh mollis sodales eleifend. Donec tempor erat risus, nec congue magna accumsan commodo pretium.. </p>
+          </div>
+        </div>
+      </div>
+      <div className='part3'>
         <h4 className='head5'>We have passion for<span className='sub4'> Games!</span></h4>
         <h4 className='head6'> Our team is next-level. And we&apos;re<span className='sub4'> proud of it.</span></h4>
         <p className='intro5'> Our dynamic team blends tech-savvy developers, imaginative artists, analytical minds, and visionary product managers. Driven to innovate, we bring excitement to every project </p>
         <Slider {...settings2}>
-        <div>
-          <img className='image9' src={image9} alt="description_1" />
-          <p className='head7'>Peter Parker<br/><span className='intro6'>Artist</span></p>
-        </div>
-        <div>
-          <img className='image9' src={image10} alt="description_2" />
-          <p className='head7'>Peter Parker<br/><span className='intro6'>Artist</span></p>
-        </div>
-        <div>
-          <img className='image9' src={image9} alt="description_3" />
-          <p className='head7'>Peter Parker<br/><span className='intro6'>Artist</span></p>
-        </div>
-        <div>
-          <img className='image9' src={image10} alt="description_3" />
-          <p className='head7'>Peter Parker<br/><span className='intro6'>Artist</span></p>
-        </div>
-      </Slider>
-      <p className='head8'>Our Team<span className='sub4'> Provide</span></p>
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div>
+            <img className='image9' src={image9} alt="description_1" />
+            <p className='head7'>Peter Parker<br /><span className='intro6'>Artist</span></p>
+          </div>
+          <div>
+            <img className='image9' src={image10} alt="description_2" />
+            <p className='head7'>Peter Parker<br /><span className='intro6'>Artist</span></p>
+          </div>
+          <div>
+            <img className='image9' src={image9} alt="description_3" />
+            <p className='head7'>Peter Parker<br /><span className='intro6'>Artist</span></p>
+          </div>
+          <div>
+            <img className='image9' src={image10} alt="description_3" />
+            <p className='head7'>Peter Parker<br /><span className='intro6'>Artist</span></p>
+          </div>
+        </Slider>
+        <p className='head8'>Our Team<span className='sub4'> Provides</span></p>
+        <p className='head9'>Next Level<span className='sub4'> Services</span></p>
+        <p className='intro'>4le Studios provides end-to-end services for clients wishing to employ game development businesses skilled in Unity3D, Unreal, PlayCanvas, blockchain, game design, VR, NFT, metaverse, and more. </p>
+        <div className='flex2'></div>
 
 
       </div>
-      );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  );
 }
 
-      export default Home;
+export default Home;
