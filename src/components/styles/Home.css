@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #122, #044);
+  background-color: #033;
 }
 
 /* .Home {
@@ -104,7 +104,7 @@ body {
 }
 
 .part2 {
-  background: linear-gradient(to right, #000, #033);
+  background-color: #022;
   padding-bottom: 8rem;
   padding-top: 2rem;
   padding-left: 8px;
@@ -228,8 +228,9 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  background: linear-gradient(to right, #000, #033);
+  background-color: #022;
   border-radius: 8px;
+  margin-right: 4px;
 }
 
 .icon {
@@ -266,7 +267,7 @@ body {
 
 .part3 {
   padding-top: 1rem;
-  background: linear-gradient(to right, #000, #033);
+  background-color: #022;
 }
 
 .intro5 {
@@ -318,6 +319,6 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  background: linear-gradient(to right, #122, #044);
+  background-color: #033;
   border-radius: 8px;
 }
