@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaPlus } from 'react-icons/fa';
+import { FaPlus, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +12,7 @@ import image7 from '../images/character.jpeg';
 import image8 from '../images/anime.jpg';
 import image9 from '../images/team-members-2.jpg';
 import image10 from '../images/team-members-4.jpg';
+import image11 from '../images/life-post-img-4.jpg';
 
 const words = ['Entertainment', 'Pleasure', 'Enjoyment'];
 function Home() {
@@ -252,30 +253,37 @@ function Home() {
         </Slider>
         <p className='head8'>Our Team<span className='sub4'> Provides</span></p>
         <p className='head9'>Next Level<span className='sub4'> Services</span></p>
-        <p className='intro'>4le Studios provides end-to-end services for clients wishing to employ game development businesses skilled in Unity3D, Unreal, PlayCanvas, blockchain, game design, VR, NFT, metaverse, and more. </p>
-        <div className='flex2'></div>
+        <p className='intro7'>4le Studios provides end-to-end services for clients wishing to employ game development businesses skilled in Unity3D, Unreal, PlayCanvas, blockchain, game design, VR, NFT, metaverse, and more.<br/> <Link to="/services" className='Glink2'>Our Services</Link> </p>
+        <div className='join'>
+        <img className='image11' src={image11} />
+        <img className='image11' src={image11} />
+        <img className='image11' src={image11} />
+        <p className='head9'>Join Us</p>
+        <p className='intro7'> Still haven&apos;t found your dream job? Join Team 4le Studios and become the next member of an ever-growing family!<br/> <Link to="/pages/careers" className='Glink2'>Explore Jobs</Link> </p>
+        </div>
+      </div>
+      <div className='footer'>
+        <div>
+        <h4 className='head4'>4le Studios</h4>
+        <p className='intro3'> 4le Studios is a premier gaming studio creating innovative and engaging games for players of all ages. Offering a wide variety of gaming experiences. </p>
+        <div className='socials'>
+          <a href='#' className='icon2'><FaFacebook /></a>
+          <a href='#' className='icon2'><FaInstagram /></a>
+          <a href='#' className='icon2'><FaTwitter /></a>
+          <a href='#' className='icon2'><FaLinkedin /></a>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
 
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   );
 }
