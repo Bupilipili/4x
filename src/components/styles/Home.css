@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #11132a;
 }
@@ -357,6 +361,12 @@ body {
 .socials {
   display: flex;
   gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.image12 {
+  height: 94vw;
+  padding-bottom: 1rem;
 }
 
 .icon2 {
