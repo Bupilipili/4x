@@ -13,6 +13,7 @@ import image8 from '../images/anime.jpg';
 import image9 from '../images/team-members-2.jpg';
 import image10 from '../images/team-members-4.jpg';
 import image11 from '../images/life-post-img-4.jpg';
+import image12 from '../images/gallery-img-8.png';
 
 const words = ['Entertainment', 'Pleasure', 'Enjoyment'];
 function Home() {
@@ -264,16 +265,17 @@ function Home() {
       </div>
       <div className='footer'>
         <div>
-        <h4 className='head4'>4le Studios</h4>
-        <p className='intro3'> 4le Studios is a premier gaming studio creating innovative and engaging games for players of all ages. Offering a wide variety of gaming experiences. </p>
-        <div className='socials'>
-          <a href='#' className='icon2'><FaFacebook /></a>
-          <a href='#' className='icon2'><FaInstagram /></a>
-          <a href='#' className='icon2'><FaTwitter /></a>
-          <a href='#' className='icon2'><FaLinkedin /></a>
+          <h4 className='head4'>4le Studios</h4>
+          <p className='intro3'> 4le Studios is a premier gaming studio creating innovative and engaging games for players of all ages. Offering a wide variety of gaming experiences. </p>
+          <div className='socials'>
+            <a href='#' className='icon2'><FaFacebook /></a>
+            <a href='#' className='icon2'><FaInstagram /></a>
+            <a href='#' className='icon2'><FaTwitter /></a>
+            <a href='#' className='icon2'><FaLinkedin /></a>
+          </div>
+          <img className='image12' src={image12} />
         </div>
-
-        </div>
+          <h4 className='head4'>Let&apos;s Get Started</h4>
 
 
 
