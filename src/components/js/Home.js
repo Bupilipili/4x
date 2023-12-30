@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaPlus, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaPlus, FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhone, FaClock } from 'react-icons/fa';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -276,16 +276,35 @@ function Home() {
           <img className='image12' src={image12} />
         </div>
           <h4 className='head4'>Let&apos;s Get Started</h4>
-
-
-
-
-
-
-
-
-
-      </div>
+          <p className='intro3'>For further info and support <Link to="/Contact" className='words'>Contact Us</Link></p>
+          <div className='in'>
+          <input type='email' className='input' placeholder='Enter Email'/>
+          <button type='submit' className='subscribe'>Subscribe</button>
+          </div>
+          <h4 className='head10'>Office</h4>
+          <div className='ufoot'>
+          <span className='plus1'><FaMapMarkerAlt /></span>
+          <p className='intro3'>Dar es Salaam<br/>Lorem Ipsum 32, Lorem Street</p>
+          </div>
+          <h4 className='head10'>Email Address</h4>
+          <div className='ufoot'>
+          <span className='plus1'><FaEnvelope /></span>
+          <p className='intro3'>LoremIpsum@gmail.com<br/>LoremIpsum@gmail.com</p>
+          </div>
+          <h4 className='head10'>Phone Numbers</h4>
+          <div className='ufoot'>
+          <span className='plus1'><FaPhone /></span>
+          <p className='intro3'>+255 64x xxx xxx<br/>+255 64x xxx xxx</p>
+          </div>
+          <h4 className='head10'>Working Hours</h4>
+          <div className='ufoot'>
+          <span className='plus1'><FaClock /></span>
+          <p className='intro3'>Mon-Fri: 09:00 - 05:00<br/>Sat-Sun: Weekend</p>
+          </div>
+          </div>
+          <div className='ufoot2'>
+          <p className='intro3'> Copyright © 2023, <Link to="/Home" className='words'>4le Studios</Link> - All Rights Reserved</p>
+          </div>
     </div>
   );
 }
